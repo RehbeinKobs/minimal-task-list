@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Task List</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="started" class="lists">
+            <ul></ul>
+        </div>
+        <div id="notstarted" class="lists">
+            <ul></ul>
+        </div>
+        <div id="finished" class="lists">
+            <ul></ul>
+        </div>
+        <div id="options">
+            <button id="input-task">add</button>
+            <button id="clear-tasks">clear</button>
+        </div>
+    </div>
+    <div id="input-container" class="hidden">
+        <div>
+            <textarea></textarea>
+            <button id="add-task">add</button>
+            <button id="cancel-input">cancel</button>
+        </div>
+    </div>
+    <div id="confirmation-container" class="hidden">
+        <div>
+            <span>are you sure?</span>
+            <button id="confirm">yes</button>
+            <button id="cancel">cancel</button>
+        </div>
+    </div>
+</body>
+</html>
